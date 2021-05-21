@@ -52,6 +52,7 @@ function stopGame() {
 
 function finishGame(win) {
     started = false;
+    stopGameTimer();
     hideGameButton();
     showPopUpWithText(win ? 'YOU WON!🎉':'YOU LOST 😭');
 }
